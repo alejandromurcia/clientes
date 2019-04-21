@@ -8,6 +8,6 @@ import org.springframework.data.repository.CrudRepository;
 @EnableScan
 public interface ClientRepository extends CrudRepository<ClientModel, String> {
 
-    ClientModel getClientById(int userId);
+    ClientModel findByCedula(int cedula);
 
 }

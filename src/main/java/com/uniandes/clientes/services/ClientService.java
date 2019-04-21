@@ -13,10 +13,10 @@ public class ClientService {
     private static final Logger LOGGER = LoggerFactory.getLogger(ClientService.class);
 
     @Autowired
-    ClientRepository clientRepository;
+    private ClientRepository clientRepository;
 
-    public ClientModel getClient(int clientId) {
-        return this.clientRepository.getClientById(clientId);
+    public ClientModel getClient(int cedula) {
+        return this.clientRepository.findByCedula(cedula);
     }
 
     public ClientModel saveClient(ClientModel clienteModel) {

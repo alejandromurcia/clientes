@@ -22,9 +22,9 @@ public class ClientController {
 		
 	@RequestMapping(value = "/cliente", method = RequestMethod.GET)
     @ResponseBody
-    public ClientModel getClientById(@RequestParam int clientId) {
+    public ClientModel getClientById(@RequestParam int cedula) {
 
-		return this.clientService.getClient(clientId);
+		return this.clientService.getClient(cedula);
     }
 
 

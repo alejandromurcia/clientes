@@ -11,7 +11,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @ComponentScan(
         "com.uniandes.clientes.*"
 )
-@EnableAutoConfiguration
 @EnableAsync
 public class ClientApplication {
     public static void main(final String[] args) {
